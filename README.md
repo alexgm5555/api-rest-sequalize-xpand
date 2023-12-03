@@ -2,12 +2,25 @@
 
 # Xpand API
 
+Proyecto construido con:
+Node
+typescript
+Express
+Sequalize orm
+mysql:5.7
+api rest
+arquitectura microservicios 
+estructura similar a la usada en nest.js
+
+Instrucciones para instalación en un ambiente local
+
 Es importante tener instalado en la maquina Docker Destop, para agilizar la instalación
 
 1. Clonar proyecto
 2. Instalar Dependencias
 ```npm install```
 3. Cambiar las variables de entorno
+( en el proyecto hay un archivo .env-template para llenar los campos de las variables de entorno sin embargo el archivo que se utilizó para el desarroll serà enviado en un corre con las url del  proyecto )
 3. inicializar Docker Desktop
 4. Levantar la base de datos
 ```
@@ -16,7 +29,7 @@ docker-compose up --build
 nota: el anterior comando dejarlo corriendo mientras se hacen las consultas
 
 5. Inicializar: 
-```npm run start:dev``` o
+```npm run start:dev```
 ```npm start```
 
 7. Los EndPoint Disponibles son:
