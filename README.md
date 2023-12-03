@@ -8,6 +8,7 @@ typescript
 Express
 Sequalize orm
 mysql:5.7
+docker
 api rest
 arquitectura microservicios 
 estructura similar a la usada en nest.js
