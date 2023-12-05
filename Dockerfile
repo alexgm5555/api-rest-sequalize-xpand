@@ -12,4 +12,5 @@ COPY . /app
 RUN npm install
 
 # Define the entry point for the container
+RUN ls -R /root/app
 CMD ["npm", "start"]
