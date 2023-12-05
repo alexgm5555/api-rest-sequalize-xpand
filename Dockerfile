@@ -15,4 +15,5 @@ RUN npm install
 # Define the entry point for the container
 RUN ls -R /root/app/
 
-CMD ["npm", "start"]
+EXPOSE 3000
+#CMD ["npm", "start"]
