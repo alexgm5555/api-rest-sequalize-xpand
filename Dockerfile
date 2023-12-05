@@ -16,4 +16,4 @@ RUN npm install
 RUN ls -R /root/app/
 
 EXPOSE 3000
-#CMD ["npm", "start"]
+CMD ["npm", "start"]
