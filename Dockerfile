@@ -1,19 +1,20 @@
 # Use the official Node.js image as the base image
-FROM uduntu:latest
+FROM node:14
 
 # Set the working directory in the container
-RUN mkdir -p -- /root/app/src
-WORKDIR /root/app
+WORKDIR /usr/src/app
 
 # Copy the application files into the working directory
-COPY package.json /root/app/package.json
-COPY /src/* /root/src/
+COPY package*.json ./
 
 # Install the application dependencies
 RUN npm install
 
-# Define the entry point for the container
-RUN ls -R /root/app/
+# Copy the rest of the application code to the working directory
+COPY . .
 
+# Expose the port on which your app runs
 EXPOSE 3000
+
+# Command to run your application
 CMD ["npm", "start"]
